@@ -9,7 +9,7 @@ $( document ).ready(function() {
       else { auth_rememberme = 'no'; }
 
 		  $.ajax({                                                  //Метод ajax
-      type: "POST",
+      type: "POST",                                                                                                 //Метод POST
       url: "../conn_bd/auth.php",                                                                                   //Подключаемый файл
       data: "auth_login="+auth_login+"&auth_password="+auth_password+"&auth_rememberme="+auth_rememberme,           //Передаваемые параметры
       dataType: "html",
